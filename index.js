@@ -4,9 +4,9 @@ let travelcheap = ['./images/travel-1.PNG', './images/travel-2.PNG', './images/t
 let airbnbcount = 0;
 let goalbankcount = 0;
 let travelcount = 0;
-// document.getElementById('airbnb').src = airbnb[1];
-// document.getElementById('goalbank').src = goalbank[airbnbcount];
-// document.getElementById('travelcheap').src = travelcheap[airbnbcount];
+document.getElementById('airbnb').src = airbnb[1];
+document.getElementById('goalbank').src = goalbank[airbnbcount];
+document.getElementById('travelcheap').src = travelcheap[airbnbcount];
 
 
 function addcarousel(str) {
