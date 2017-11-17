@@ -1,0 +1,104 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.description {
+    margin: 80px 0;
+}
+/* 
+.pics-container {
+    height: 275px;
+    width: 550px;
+} */
+
+.logo {
+    height: 500px;
+    width: 800px;
+    border: 3px solid black;
+}
+
+.logo-small {
+    height: 400px;
+    width: 600px;
+    border: 2px solid #B7B7B7;
+    padding: 5px;
+}
+
+.arrow {
+    margin: 25px;
+    height: 40px;
+    width: 40px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.project-summary {
+    text-align: center;
+}
+
+.arrow-wrapper {
+    height: 60px;
+    width: 60px;
+}
+
+#forward-arrow {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+
+}
+
+.outer {
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+
+.arrow-group:hover {
+    cursor: pointer;
+}
+
+.arrow-group:hover .outer {
+    transform: scale(1.2);
+   fill: black;
+}
+
+.arrow-group:hover .top-bar {
+    fill: white;
+}
+
+.arrow-group:hover .bottom-bar {
+    fill: white;
+}
+
+#backward-arrow {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+
+.outer-back {
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+
+.backward-group:hover {
+    cursor: pointer;
+}
+
+.backward-group:hover .outer-back {
+    transform: scale(1.2);    
+   fill: black;
+}
+
+.backward-group:hover .outer-top-bar {
+    fill: white;
+}
+
+.backward-group:hover .outer-bottom-bar {
+    fill: white;
+}
