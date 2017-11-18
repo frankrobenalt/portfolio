@@ -1,10 +1,10 @@
-let airbnb = ['./images/air-bnb-1.PNG', './images/air-bnb-2.PNG', './images/air-bnb-3.PNG'];
+let airbnb = ['./images/air-bnb-3.PNG', './images/air-bnb-2.PNG', './images/air-bnb-1.PNG'];
 let goalbank = ['./images/goal-bank-1.PNG', './images/goal-bank-2.PNG'];
 let travelcheap = ['./images/travel-1.PNG', './images/travel-2.PNG', './images/travel-3.PNG'];
 let airbnbcount = 0;
 let goalbankcount = 0;
 let travelcount = 0;
-document.getElementById('airbnb').src = airbnb[2];
+document.getElementById('airbnb').src = airbnb[0];
 document.getElementById('goalbank').src = goalbank[airbnbcount];
 document.getElementById('travelcheap').src = travelcheap[airbnbcount];
 
