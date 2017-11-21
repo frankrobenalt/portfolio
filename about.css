@@ -45,13 +45,18 @@
 @media (max-width: 700px){
 
     .link {
-        margin: 0 28px;
+        margin: 0 10px;
+    }
+
+    .arrow-wrapper {
+        width: 0;
     }
 
     .about-container {
         width: 100%;
         transform: none;
         margin: 5% 0;
+        padding: 3% 0;
     }
 
     .about-content {
@@ -69,12 +74,12 @@
 
     .pics-container {
         display: flex;
-        width: 100%;
+        width: initial;
         margin-left: 2%;
     }
 
     .skew-content {
-        margin-right: 5%;
+        margin-right: 0%;
         width: 100%;
     }
 
