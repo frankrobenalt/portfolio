@@ -26,3 +26,17 @@
     font-weight: 500;
     color: white;
 }
+
+@media (max-width: 700px){
+    .contact-container {
+        width: 100%;
+        transform: none;
+        -webkit-transform: none;
+        margin: 5% 0 0 0;
+    }
+
+    .contact-content {
+        transform: none;
+        margin-right: 0;
+    }
+}
