@@ -1,3 +1,20 @@
+
+
+setTimeout(function() {
+    const icon = document.getElementById('one');
+    icon.style.marginLeft = '0%';
+}, 500);
+
+setTimeout(function() {
+    let icon = document.getElementById('two');
+    icon.style.marginLeft = '0%';
+}, 1500);
+
+setTimeout(function() {
+    let icon = document.getElementById('three');
+    icon.style.marginLeft = '0%';
+}, 2500);
+
 let airbnb = ['./images/air-bnb-3.PNG', './images/air-bnb-2.PNG', './images/air-bnb-1.PNG'];
 let goalbank = ['./images/goal-bank-1.PNG', './images/goal-bank-2.PNG'];
 let travelcheap = ['./images/travel-1.PNG', './images/travel-2.PNG', './images/travel-3.PNG'];
@@ -55,7 +72,6 @@ window.addEventListener('scroll', scroll);
 function scroll(event){
     // const about = document.getElementById('about')
     // const aboutDimensions = about.getBoundingClientRect();
-    // const icons = document.getElementById('icons')
     // const iconsDimensions = icons.getBoundingClientRect();
     // aboutDimensions.top - 10 < iconsDimensions.top ? icons.style.display = 'none' : icons.style.display = 'flex'
 }
