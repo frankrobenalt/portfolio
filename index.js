@@ -8,12 +8,12 @@ setTimeout(function() {
 setTimeout(function() {
     let icon = document.getElementById('two');
     icon.style.marginLeft = '0%';
-}, 1500);
+}, 700);
 
 setTimeout(function() {
     let icon = document.getElementById('three');
     icon.style.marginLeft = '0%';
-}, 2500);
+}, 900);
 
 let airbnb = ['./images/air-bnb-3.PNG', './images/air-bnb-2.PNG', './images/air-bnb-1.PNG'];
 let goalbank = ['./images/goal-bank-1.PNG', './images/goal-bank-2.PNG'];
