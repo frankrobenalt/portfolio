@@ -1,4 +1,12 @@
-
+const airbnb = ['./images/air-bnb-3.PNG', './images/air-bnb-2.PNG', './images/air-bnb-1.PNG'];
+const goalbank = ['./images/goal-bank-1.PNG', './images/goal-bank-2.PNG'];
+const travelcheap = ['./images/travel-1.PNG', './images/travel-2.PNG', './images/travel-3.PNG'];
+let airbnbcount = 0;
+let goalbankcount = 0;
+let travelcount = 0;
+document.getElementById('airbnb').src = airbnb[0];
+document.getElementById('goalbank').src = goalbank[airbnbcount];
+document.getElementById('travelcheap').src = travelcheap[airbnbcount];
 
 setTimeout(function() {
     const icon = document.getElementById('one');
@@ -15,40 +23,66 @@ setTimeout(function() {
     icon.style.marginLeft = '0%';
 }, 900);
 
-let airbnb = ['./images/air-bnb-3.PNG', './images/air-bnb-2.PNG', './images/air-bnb-1.PNG'];
-let goalbank = ['./images/goal-bank-1.PNG', './images/goal-bank-2.PNG'];
-let travelcheap = ['./images/travel-1.PNG', './images/travel-2.PNG', './images/travel-3.PNG'];
-let airbnbcount = 0;
-let goalbankcount = 0;
-let travelcount = 0;
-document.getElementById('airbnb').src = airbnb[0];
-document.getElementById('goalbank').src = goalbank[airbnbcount];
-document.getElementById('travelcheap').src = travelcheap[airbnbcount];
-
-
 function addcarousel(str) {
     if (str === 'airbnb'){
     airbnbcount === airbnb.length - 1 ? airbnbcount = 0 : airbnbcount++;
-    document.getElementById(str).src = airbnb[airbnbcount];
-    } else if (str === 'goalbank') {
-        goalbankcount === goalbank.length - 1 ? goalbankcount = 0 : goalbankcount++;
-        document.getElementById(str).src = goalbank[goalbankcount];
-    } else if (str === 'travelcheap') {
-        travelcount === travelcheap.length - 1 ? travelcount = 0 : travelcount++;
-        document.getElementById(str).src = travelcheap[travelcount];
-    }
+    document.getElementById(str).style.opacity = '0';
+    setTimeout(function() {
+        document.getElementById(str).src = airbnb[airbnbcount];
+    }, 351);
+    setTimeout(function() {
+        document.getElementById(str).style.opacity = '1';
+    }, 400);
+} else if (str === 'goalbank') {
+    goalbankcount === goalbank.length - 1 ? goalbankcount = 0 : goalbankcount++;
+    document.getElementById(str).style.opacity = '0';    
+            setTimeout(function() {
+                document.getElementById(str).src = goalbank[goalbankcount];
+            }, 351);
+            setTimeout(function() {
+                document.getElementById(str).style.opacity = '1';
+            }, 400);
+        } else if (str === 'travelcheap') {
+            travelcount === travelcheap.length - 1 ? travelcount = 0 : travelcount++;
+            document.getElementById(str).style.opacity = '0';            
+                    setTimeout(function() {
+                        document.getElementById(str).src = travelcheap[travelcount];
+                    }, 351);
+                    setTimeout(function() {
+                        document.getElementById(str).style.opacity = '1';
+                    }, 400);
+}
 }
 
 function subtractcarousel(str) {
     if (str === 'airbnb'){
-    airbnbcount === 0 ? airbnbcount = airbnb.length - 1 : airbnbcount--;
-    document.getElementById(str).src = airbnb[airbnbcount];
+        airbnbcount === 0 ? airbnbcount = airbnb.length - 1 : airbnbcount--;
+        document.getElementById(str).style.opacity = '0';
+        setTimeout(function() {
+            document.getElementById(str).src = airbnb[airbnbcount];
+        }, 351);
+        setTimeout(function() {
+            document.getElementById(str).style.opacity = '1';
+        }, 400);
     } else if (str === 'goalbank') {
         goalbankcount === 0 ? goalbankcount = goalbank.length - 1 : goalbankcount--;
-        document.getElementById(str).src = goalbank[goalbankcount];
-    } else if (str === 'travelcheap') {
-        travelcount === 0 ? travelcount = travelcheap.length - 1 : travelcount--;
-        document.getElementById(str).src = travelcheap[travelcount];
+        document.getElementById(str).style.opacity = '0';        
+        setTimeout(function() {
+            document.getElementById(str).src = goalbank[goalbankcount];
+                    }, 351);
+                    setTimeout(function() {
+                        document.getElementById(str).style.opacity = '1';
+                    }, 400);
+                } else if (str === 'travelcheap') {
+                    travelcount === 0 ? travelcount = travelcheap.length - 1 : travelcount--;
+                    document.getElementById(str).style.opacity = '0';
+                    
+                            setTimeout(function() {
+                                document.getElementById(str).src = travelcheap[travelcount];
+                            }, 351);
+                            setTimeout(function() {
+                                document.getElementById(str).style.opacity = '1';
+                            }, 400);
     }
 }
 
