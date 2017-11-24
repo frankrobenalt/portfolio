@@ -90,7 +90,13 @@
     }
 
     .logo {
+        width: 100%;
+        height: initial;
+    }
+    
+    .logo-wrapper {
         width: 95%;
+        margin: 0 auto;
         height: initial;
     }
 
