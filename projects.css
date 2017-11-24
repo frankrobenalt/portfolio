@@ -28,6 +28,10 @@
     border-radius: 10px;
 }
 
+.logo-wrapper:hover {
+    cursor: pointer;
+}
+
 .logo-small {
     height: 400px;
     width: 600px;
