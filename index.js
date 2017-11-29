@@ -16,12 +16,12 @@ setTimeout(function() {
 setTimeout(function() {
     let icon = document.getElementById('two');
     icon.style.marginLeft = '0%';
-}, 700);
+}, 1000);
 
 setTimeout(function() {
     let icon = document.getElementById('three');
     icon.style.marginLeft = '0%';
-}, 900);
+}, 1500);
 
 function addcarousel(str) {
     if (str === 'airbnb'){
@@ -101,12 +101,12 @@ function scrollContact(){
     contact.scrollIntoView({behavior: "smooth", inline: "start"});
 }
 
-window.addEventListener('scroll', scroll);
+// window.addEventListener('scroll', scroll);
 
-function scroll(event){
-    // const about = document.getElementById('about')
-    // const aboutDimensions = about.getBoundingClientRect();
-    // const iconsDimensions = icons.getBoundingClientRect();
-    // aboutDimensions.top - 10 < iconsDimensions.top ? icons.style.display = 'none' : icons.style.display = 'flex'
-}
+// function scroll(event){
+//     const about = document.getElementById('about')
+//     const aboutDimensions = about.getBoundingClientRect();
+//     const iconsDimensions = icons.getBoundingClientRect();
+//     aboutDimensions.top - 10 < iconsDimensions.top ? icons.style.display = 'none' : icons.style.display = 'flex'
+// }
 
