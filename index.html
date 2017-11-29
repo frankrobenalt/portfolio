@@ -9,22 +9,46 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:800|Spectral+SC" rel="stylesheet">
 </head>
 
-<body>
-    <div class="">
-        <div class="center">
-        <div class="flex-end header">
-            <a onclick="scrollAbout()">
-                <div class="link">About</div>
-            </a>
-            <a onclick="scrollProjects()">
-                <div class="link">Projects</div>
-            </a>
-            <a onclick="scrollContact()">
-                <div class="link">Contact</div>
-            </a>
-        </div>
-        <div class="name flex-center">Frank Robenalt</div>
+<body id="body">
+    <div id="bgone"></div>
+    <div id="bgtwo"></div>    
+    <div id="nav" class="flex-end header">
+        <!-- <a onclick="addBackgrounds()">
+            <div class="link">Add Backgrounds</div>
+        </a> -->
+        <a onclick="scrollAbout()">
+            <div class="link">About</div>
+        </a>
+        <a onclick="scrollProjects()">
+            <div class="link">Projects</div>
+        </a>
+        <a onclick="scrollContact()">
+            <div class="link">Contact</div>
+        </a>
+    </div>
+    <div id="scrollNav" class="space-between header">
+        <div class="navName">Frank Robenalt</div>
+        <div class="flex-end">
+        <!-- <a onclick="addBackgrounds()">
+            <div class="link">Add Backgrounds</div>
+        </a> -->
+        <a onclick="scrollAbout()">
+            <div class="link">About</div>
+        </a>
+        <a onclick="scrollProjects()">
+            <div class="link">Projects</div>
+        </a>
+        <a onclick="scrollContact()">
+            <div class="link">Contact</div>
+        </a>
+    </div>
+    </div>
+        <div class="center head">
+            <div>
+        <div id="name" class="name flex-center">Frank Robenalt</div>
         <div class="sub flex-center">Full Stack Web Developer</div>
+            </div>
+            <div>
         <div id="icons" class="icons flex-center" onscroll="scroll()">
             <div id="one" class="icon-box">
                 <img class="icon" src="./images/javascript.svg" alt="react">
@@ -42,6 +66,10 @@
                 <img class="icon" src="./images/angular-icon-1.svg" alt="react">
                 <div class="icon-title">Angular.js</div>
             </div>
+            <!-- <div class="icon-box">
+                    <img class="icon" src="./images/nodejs-1.svg" alt="react">
+                    <div class="icon-title">Node.js</div>
+                </div> -->
         </div>
         <div class="icons flex-center">
             <div id="two" class="icon-box">
@@ -52,6 +80,10 @@
                 <img class="icon" src="./images/css3.svg" alt="react">
                 <div class="icon-title">CSS3</div>
             </div>
+            <!-- <div class="icon-box">
+                    <img class="icon" src="./images/sass-1.svg" alt="react">
+                    <div class="icon-title">Sass</div>
+                </div> -->
             <div class="icon-box">
                 <img class="icon" src="./images/jquery-2.svg" alt="react">
                 <div class="icon-title">JQuery</div>
@@ -83,7 +115,7 @@
                 <div class="icon-title">AWS</div>
             </div> -->
         </div>
-    </div>
+            </div>
     </div>
     <div id="about" class="about-container">
         <div class="about-content">

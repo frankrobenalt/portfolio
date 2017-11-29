@@ -8,6 +8,7 @@
     padding: 3% 2%;
     margin: 15% -10%;
     /* box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.7); */
+    z-index: 2;
 }
 
 .about-content {
@@ -31,7 +32,7 @@
     text-indent: 50px;
     width: 50%;
     color: #B8B8B8;
-    font-size: 18px;
+    font-size: 1.4em;
     line-height: 250%;
     text-align: left;
 }
@@ -57,6 +58,7 @@
         transform: none;
         margin: 5% 0;
         padding: 3% 0;
+        z-index: 2;
     }
 
     .about-content {
@@ -85,6 +87,7 @@
 
     .summary {
         font-size: 1em;
+        text-align: left;
         margin-top: 25px;
         width: 80%;
     }
