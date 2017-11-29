@@ -6,7 +6,7 @@ const bg = document.getElementById('about').getBoundingClientRect();
 const bgtwo = document.getElementById('projects').getBoundingClientRect();
 const bgEnd = document.getElementById('contact').getBoundingClientRect();
 document.getElementById('bgtwo').style.top = bg.bottom - 300 + 'px';
-document.getElementById('bgtwo').style.height = bgEnd.bottom - bgtwo.y + 200 + 'px';
+document.getElementById('bgtwo').style.height = bgEnd.bottom - bgtwo.y + 300 + 'px';
 
 function addBackgrounds() {
     window.scrollTo(0, 0);
