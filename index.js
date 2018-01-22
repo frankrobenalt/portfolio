@@ -130,10 +130,12 @@ console.log(header);
 
 function scroll(event){
     if (window.scrollY > bg.top - 100) {
-        document.getElementById('scrollNav').style.transform = 'translateY(0px)';        
+        document.getElementById('scrollNav').style.transform = 'translateY(0px)';
+        document.getElementById('scrollNav').classList.add('shadow');        
     } 
     else if (window.scrollY <= bg.top - 100) {
-        document.getElementById('scrollNav').style.transform = 'translateY(-70px)';        
+        document.getElementById('scrollNav').style.transform = 'translateY(-70px)'; 
+        document.getElementById('scrollNav').classList.remove('shadow');                
     } 
 }
 
