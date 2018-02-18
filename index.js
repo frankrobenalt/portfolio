@@ -35,7 +35,7 @@ setTimeout(function () {
     icon.style.marginLeft = '0%';
 }, 1500);
 
-const airbnb = ['./images/air-bnb-3.PNG', './images/air-bnb-2.PNG', './images/air-bnb-1.PNG'];
+const airbnb = ["https://d2ffutrenqvap3.cloudfront.net/items/0M063z0P2G2c3o3z3A0O/Screen%20recording%202018-02-18%20at%2004.46.14%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/2x0n11183C3G2x2E2w1W/Screen%20recording%202018-02-18%20at%2004.49.40%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/1i0v2v313b2U1u1p1K2n/Screen%20recording%202018-02-18%20at%2004.50.57%20PM.gif"];
 const goalbank = ['./images/goal-bank-1.PNG', './images/goal-bank-2.PNG'];
 const travelcheap = ['./images/travel-1.PNG', './images/travel-2.PNG', './images/travel-3.PNG'];
 const bedandbread = ["https://d2ffutrenqvap3.cloudfront.net/items/1c3U0t2V0I1N3A2r3p0K/Screen%20recording%202018-02-18%20at%2003.12.33%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/442C1l141y3L2e1M0z1k/Screen%20recording%202018-02-18%20at%2003.14.35%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/0i44431K0n231u1y3Y1X/Screen%20recording%202018-02-18%20at%2003.15.57%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/0z3K3X0s0n3a1j062316/Screen%20recording%202018-02-18%20at%2003.26.26%20PM.gif"]
