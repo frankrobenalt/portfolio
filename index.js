@@ -38,12 +38,15 @@ setTimeout(function () {
 const airbnb = ['./images/air-bnb-3.PNG', './images/air-bnb-2.PNG', './images/air-bnb-1.PNG'];
 const goalbank = ['./images/goal-bank-1.PNG', './images/goal-bank-2.PNG'];
 const travelcheap = ['./images/travel-1.PNG', './images/travel-2.PNG', './images/travel-3.PNG'];
+const bedandbread = ["https://d2ffutrenqvap3.cloudfront.net/items/1c3U0t2V0I1N3A2r3p0K/Screen%20recording%202018-02-18%20at%2003.12.33%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/442C1l141y3L2e1M0z1k/Screen%20recording%202018-02-18%20at%2003.14.35%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/0i44431K0n231u1y3Y1X/Screen%20recording%202018-02-18%20at%2003.15.57%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/0z3K3X0s0n3a1j062316/Screen%20recording%202018-02-18%20at%2003.26.26%20PM.gif"]
 let airbnbcount = 0;
 let goalbankcount = 0;
 let travelcount = 0;
+let bedandbreadcount = 0;
 document.getElementById('airbnb').src = airbnb[0];
 document.getElementById('goalbank').src = goalbank[airbnbcount];
 document.getElementById('travelcheap').src = travelcheap[airbnbcount];
+document.getElementById('bedandbread').src = bedandbread[bedandbreadcount];
 
 function addcarousel(str) {
     if (str === 'airbnb') {
@@ -69,6 +72,15 @@ function addcarousel(str) {
         document.getElementById(str).style.opacity = '0';
         setTimeout(function () {
             document.getElementById(str).src = travelcheap[travelcount];
+        }, 351);
+        setTimeout(function () {
+            document.getElementById(str).style.opacity = '1';
+        }, 400);
+    } else if (str === 'bedandbread'){
+        bedandbreadcount === bedandbread.length - 1 ? bedandbreadcount = 0 : bedandbreadcount++;
+        document.getElementById(str).style.opacity = '0';
+        setTimeout(function () {
+            document.getElementById(str).src = bedandbread[bedandbreadcount];
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
@@ -101,6 +113,16 @@ function subtractcarousel(str) {
 
         setTimeout(function () {
             document.getElementById(str).src = travelcheap[travelcount];
+        }, 351);
+        setTimeout(function () {
+            document.getElementById(str).style.opacity = '1';
+        }, 400);
+    } else if (str === 'bedandbread') {
+        bedandbreadcount === 0 ? bedandbreadcount = bedandbread.length - 1 : bedandbreadcount--;
+        document.getElementById(str).style.opacity = '0';
+
+        setTimeout(function () {
+            document.getElementById(str).src = bedandbread[bedandbreadcount];
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';

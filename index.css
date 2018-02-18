@@ -101,7 +101,7 @@ a {
 }
 
 #bgone {
-    background-image: url('./images/bg.svg');
+    /* background-image: url('./images/bg.svg'); */
     /* background-size: cover;
     background-repeat: no-repeat; */
     height: 150vh;
@@ -116,7 +116,7 @@ a {
 }
 
 #bgtwo {
-    background-image: url('./images/feather-bg.svg');
+    /* background-image: url('./images/feather-bg.svg'); */
     width: 100vw;
     position: absolute;
     opacity: .5;

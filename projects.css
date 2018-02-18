@@ -31,6 +31,14 @@
     background-color: white;
 }
 
+#bnbwrapper {
+    height: 390px;
+}
+
+#bedandbread {
+    height: 390px;
+}
+
 .logo-wrapper:hover {
     cursor: pointer;
 }
