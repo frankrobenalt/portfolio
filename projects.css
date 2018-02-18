@@ -39,6 +39,14 @@
     height: 390px;
 }
 
+#airwrapper {
+    height: 420px;
+}
+
+#airbnb {
+    height: 420px;
+}
+
 .logo-wrapper:hover {
     cursor: pointer;
 }
