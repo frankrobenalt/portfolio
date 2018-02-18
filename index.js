@@ -57,7 +57,7 @@ function addcarousel(str) {
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
-        }, 400);
+        }, 1000);
     } else if (str === 'goalbank') {
         goalbankcount === goalbank.length - 1 ? goalbankcount = 0 : goalbankcount++;
         document.getElementById(str).style.opacity = '0';
@@ -66,7 +66,7 @@ function addcarousel(str) {
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
-        }, 400);
+        }, 1000);
     } else if (str === 'travelcheap') {
         travelcount === travelcheap.length - 1 ? travelcount = 0 : travelcount++;
         document.getElementById(str).style.opacity = '0';
@@ -75,7 +75,7 @@ function addcarousel(str) {
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
-        }, 400);
+        }, 1000);
     } else if (str === 'bedandbread'){
         bedandbreadcount === bedandbread.length - 1 ? bedandbreadcount = 0 : bedandbreadcount++;
         document.getElementById(str).style.opacity = '0';
@@ -84,7 +84,7 @@ function addcarousel(str) {
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
-        }, 400);
+        }, 1000);
     }
 }
 
@@ -97,7 +97,7 @@ function subtractcarousel(str) {
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
-        }, 400);
+        }, 1000);
     } else if (str === 'goalbank') {
         goalbankcount === 0 ? goalbankcount = goalbank.length - 1 : goalbankcount--;
         document.getElementById(str).style.opacity = '0';
@@ -106,7 +106,7 @@ function subtractcarousel(str) {
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
-        }, 400);
+        }, 1000);
     } else if (str === 'travelcheap') {
         travelcount === 0 ? travelcount = travelcheap.length - 1 : travelcount--;
         document.getElementById(str).style.opacity = '0';
@@ -116,7 +116,7 @@ function subtractcarousel(str) {
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
-        }, 400);
+        }, 1000);
     } else if (str === 'bedandbread') {
         bedandbreadcount === 0 ? bedandbreadcount = bedandbread.length - 1 : bedandbreadcount--;
         document.getElementById(str).style.opacity = '0';
@@ -126,7 +126,7 @@ function subtractcarousel(str) {
         }, 351);
         setTimeout(function () {
             document.getElementById(str).style.opacity = '1';
-        }, 400);
+        }, 1000);
     }
 }
 
