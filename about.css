@@ -99,7 +99,7 @@
         height: initial;
     }
 
-    .logo-wrapper {
+    .logo-wrapper, #airbnb, #airwrapper, #bedandbread, #bnbwrapper {
         width: 95%;
         margin: 0 auto;
         height: initial;
