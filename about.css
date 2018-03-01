@@ -99,13 +99,13 @@
         /* height: initial; */
     }
 
-    .logo-wrapper {
+    .logo-wrapper, #bnbwrapper, #airwrapper {
         width: 90%;
         height: 200px;
         margin: 0 auto;
     }
 
-    #airbnb, #airwrapper, #bedandbread, #bnbwrapper, #travelcheap, #goalbank {
+    #airbnb, #bedandbread, #travelcheap, #goalbank {
         width: 100%;
         height: 200px;
     }
