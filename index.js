@@ -43,10 +43,10 @@ let airbnbcount = 0;
 let goalbankcount = 0;
 let travelcount = 0;
 let bedandbreadcount = 0;
-document.getElementById('airbnb').src = airbnb[0];
-document.getElementById('goalbank').src = goalbank[airbnbcount];
-document.getElementById('travelcheap').src = travelcheap[airbnbcount];
-document.getElementById('bedandbread').src = bedandbread[bedandbreadcount];
+// document.getElementById('airbnb').src = airbnb[0];
+// document.getElementById('goalbank').src = goalbank[airbnbcount];
+// document.getElementById('travelcheap').src = travelcheap[airbnbcount];
+// document.getElementById('bedandbread').src = bedandbread[bedandbreadcount];
 
 function addcarousel(str) {
     if (str === 'airbnb') {
