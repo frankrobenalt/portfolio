@@ -96,13 +96,18 @@
 
     .logo {
         width: 100%;
-        height: initial;
+        /* height: initial; */
     }
 
-    .logo-wrapper, #airbnb, #airwrapper, #bedandbread, #bnbwrapper {
-        width: 95%;
+    .logo-wrapper {
+        width: 90%;
+        height: 200px;
         margin: 0 auto;
-        height: initial;
+    }
+
+    #airbnb, #airwrapper, #bedandbread, #bnbwrapper, #travelcheap, #goalbank {
+        width: 100%;
+        height: 200px;
     }
 
     #forward-arrow {
