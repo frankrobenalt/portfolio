@@ -7,15 +7,18 @@
     <link href="about.css" rel="stylesheet">
     <link href="contact.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:800|Spectral+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body id="body">
+    <div class="background-image">&nbsp;</div>
+    <div class="background-image-overlay">&nbsp;</div>
     <div id="bgone"></div>
     <div id="bgtwo"></div>    
-    <div id="nav" class="flex-end header">
-        <!-- <a onclick="addBackgrounds()">
+    <!-- <div id="nav" class="flex-end header">
+        <a onclick="addBackgrounds()">
             <div class="link">Add Backgrounds</div>
-        </a> -->
+        </a> 
         <a onclick="scrollAbout()">
             <div class="link">About</div>
         </a>
@@ -25,9 +28,9 @@
         <a onclick="scrollContact()">
             <div class="link">Contact</div>
         </a>
-    </div>
-    <div id="scrollNav" class="space-between header">
-        <div class="navName">Frank Robenalt</div>
+    </div> -->
+    <div id="scrollNav" class="space-between shadow header">
+        <div class="navName" id="navName">Frank Robenalt</div>
         <div class="flex-end">
         <!-- <a onclick="addBackgrounds()">
             <div class="link">Add Backgrounds</div>
@@ -43,13 +46,13 @@
         </a>
     </div>
     </div>
-        <div class="center head">
-            <div>
-        <div id="name" class="name flex-center">Frank Robenalt</div>
-        <div class="sub flex-center">Full Stack Web Developer</div>
+        <div class="center">
+            <div class="name-wrapper">
+        <div id="name" class="name">Frank Robenalt</div>
+        <div class="sub">Full Stack Web Developer</div>
             </div>
             <div>
-        <div id="icons" class="icons flex-center" onscroll="scroll()">
+        <div id="icons" class="icons before flex-center head" onscroll="scroll()">
             <div id="one" class="icon-box">
                 <img class="icon" src="./images/javascript.svg" alt="react">
                 <div class="icon-title">Javascript</div>
@@ -66,13 +69,11 @@
                 <img class="icon" src="./images/angular-icon-1.svg" alt="react">
                 <div class="icon-title">Angular.js</div>
             </div>
-            <!-- <div class="icon-box">
+            <div class="icon-box">
                     <img class="icon" src="./images/nodejs-1.svg" alt="react">
                     <div class="icon-title">Node.js</div>
-                </div> -->
-        </div>
-        <div class="icons flex-center">
-            <div id="two" class="icon-box">
+                </div>
+            <div class="icon-box">
                 <img class="icon" src="./images/html-5.svg" alt="react">
                 <div class="icon-title">HTML5</div>
             </div>
@@ -80,10 +81,10 @@
                 <img class="icon" src="./images/css3.svg" alt="react">
                 <div class="icon-title">CSS3</div>
             </div>
-            <!-- <div class="icon-box">
+            <div class="icon-box">
                     <img class="icon" src="./images/sass-1.svg" alt="react">
                     <div class="icon-title">Sass</div>
-                </div> -->
+                </div>
             <div class="icon-box">
                 <img class="icon" src="./images/jquery-2.svg" alt="react">
                 <div class="icon-title">JQuery</div>
@@ -92,9 +93,7 @@
                 <img class="icon" src="./images/nodejs-1.svg" alt="react">
                 <div class="icon-title">Node.js</div>
             </div>
-        </div>
-        <div class="icons flex-center">
-            <div id="three" class="icon-box">
+            <div class="icon-box">
                 <img class="icon" src="./images/postgresql.svg" alt="react">
                 <div class="icon-title">PostgreSQL</div>
             </div>
@@ -110,10 +109,10 @@
                 <img class="icon" src="./images/adobe-illustrator-cc.svg" alt="react">
                 <div class="icon-title">Illustrator</div>
             </div>
-            <!-- <div class="icon-box">
+            <div class="icon-box">
                 <img class="icon" src="./images/amazon-web-services.svg" alt="react">
                 <div class="icon-title">AWS</div>
-            </div> -->
+            </div>
         </div>
             </div>
     </div>
@@ -128,8 +127,8 @@
         </div>
     </div>
     </div>
-    <div>
-        <div id="projects" class="name flex-center">Projects</div>
+    <div id="projects">
+        <div class="name flex-center">Projects</div>
         <div class="project-container">
             <div class="description">
                     <div class="sub">The Salvation Army</div>
@@ -141,22 +140,35 @@
                                 <img class="icon-small" src="./images/chrome-7.svg" alt="chrome">
                                 <div class="icon-title-small">Bed & Bread Club</div>
                             </a>
-                            <a class="icon-box-small" href="https://webmanager.salvationarmy.org/conner-creek/" target="_blank">
+                            <a class="icon-box-small" href="https://webmanager.salvationarmy.org/dh/" target="_blank">
                                 <img class="icon-small" src="./images/chrome-7.svg" alt="chrome">
                                 <div class="icon-title-small">Regional Page Template</div>
                             </a>
                     </div>
                     <div class="pics-container space-around">
-                        <div onclick="subtractcarousel('bedandbread')">
+                        <div class="pic-container">
+                        <div onclick="carousel('sub', 'bedandbread')">
+                            <svg id="backward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer-back{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.outer-top-bar{}.outer-bottom-bar{}</style></defs><title>backward</title><g class="backward-group"><path class="outer-top-bar" d="M70.88,21.81l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24Z"/><path class="outer-bottom-bar" d="M75.12,94.38l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24Z"/></g></svg>
+                        </div>
+                        <div onclick="carousel('add', 'bedandbread')" id="bnbwrapper" class="logo-wrapper">
+                            <img src="https://d2ffutrenqvap3.cloudfront.net/items/1c3U0t2V0I1N3A2r3p0K/Screen%20recording%202018-02-18%20at%2003.12.33%20PM.gif" class="logo" id="bedandbread" alt="">
+                        </div>
+                        <div onclick="carousel('add', 'bedandbread')">
+                            <svg id="forward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.top-bar{}.bottom-bar{}</style></defs><title>forward</title><g class="arrow-group"><path class="top-bar" d="M43.38,26.05l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24Z"/><path class="bottom-bar" d="M47.62,98.62l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24Z"/></g></svg>
+                        </div>
+                    </div>
+                    <div class="pic-container">
+                        <div onclick="carousel('sub', 'bedandbreadmobile')">
                                 <svg id="backward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer-back{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.outer-top-bar{}.outer-bottom-bar{}</style></defs><title>backward</title><g class="backward-group"><path class="outer-top-bar" d="M70.88,21.81l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24Z"/><path class="outer-bottom-bar" d="M75.12,94.38l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24Z"/></g></svg>
-                                                    </div>
-                                                    <div onclick="addcarousel('bedandbread')" id="bnbwrapper" class="logo-wrapper">
-                                                        <img src="https://d2ffutrenqvap3.cloudfront.net/items/1c3U0t2V0I1N3A2r3p0K/Screen%20recording%202018-02-18%20at%2003.12.33%20PM.gif" class="logo" id="bedandbread" alt="">
-                                                    </div>
-                        <div onclick="addcarousel('bedandbread')">
+                        </div>     
+                             <div class="mobile-wrapper" onclick="carousel('add', 'bedandbreadmobile')">
+                                 <img src="https://d2ffutrenqvap3.cloudfront.net/items/3u2M0Z27450t000A1X09/Screen%20recording%202018-03-11%20at%2007.08.08%20PM.gif" id="bedandbreadmobile" class="mobile" alt="mobile-alt">
+                             </div>
+                        <div onclick="carousel('add', 'bedandbreadmobile')">
                                 <svg id="forward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.top-bar{}.bottom-bar{}</style></defs><title>forward</title><g class="arrow-group"><path class="top-bar" d="M43.38,26.05l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24Z"/><path class="bottom-bar" d="M47.62,98.62l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24Z"/></g></svg>
                         </div>
                     </div>
+                </div>
                     <div>
                         <div class="summary">
                             
@@ -179,14 +191,27 @@
                             </a>
                     </div>
                     <div class="pics-container space-around">
-                        <div onclick="subtractcarousel('airbnb')">
-                                <svg id="backward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer-back{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.outer-top-bar{}.outer-bottom-bar{}</style></defs><title>backward</title><g class="backward-group"><path class="outer-top-bar" d="M70.88,21.81l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24Z"/><path class="outer-bottom-bar" d="M75.12,94.38l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24Z"/></g></svg>
-                                                    </div>
-                                                    <div onclick="addcarousel('airbnb')" id="airwrapper" class="logo-wrapper">
-                                                        <img src="https://d2ffutrenqvap3.cloudfront.net/items/0M063z0P2G2c3o3z3A0O/Screen%20recording%202018-02-18%20at%2004.46.14%20PM.gif" class="logo" id="airbnb" alt="">
-                                                    </div>
-                        <div onclick="addcarousel('airbnb')">
-                                <svg id="forward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.top-bar{}.bottom-bar{}</style></defs><title>forward</title><g class="arrow-group"><path class="top-bar" d="M43.38,26.05l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24Z"/><path class="bottom-bar" d="M47.62,98.62l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24Z"/></g></svg>
+                        <div class="pic-container">                                    
+                            <div onclick="carousel('sub', 'airbnb')">
+                                    <svg id="backward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer-back{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.outer-top-bar{}.outer-bottom-bar{}</style></defs><title>backward</title><g class="backward-group"><path class="outer-top-bar" d="M70.88,21.81l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24Z"/><path class="outer-bottom-bar" d="M75.12,94.38l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24Z"/></g></svg>
+                            </div>
+                                 <div onclick="carousel('add', 'airbnb')" id="airwrapper" class="logo-wrapper">
+                                     <img src="https://d2ffutrenqvap3.cloudfront.net/items/0M063z0P2G2c3o3z3A0O/Screen%20recording%202018-02-18%20at%2004.46.14%20PM.gif" class="logo" id="airbnb" alt="">
+                                 </div>
+                            <div onclick="carousel('add', 'airbnb')">
+                                    <svg id="forward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.top-bar{}.bottom-bar{}</style></defs><title>forward</title><g class="arrow-group"><path class="top-bar" d="M43.38,26.05l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24Z"/><path class="bottom-bar" d="M47.62,98.62l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24Z"/></g></svg>
+                            </div>
+                        </div>
+                        <div class="pic-container">
+                                <div onclick="carousel('sub', 'airbnbmobile')">
+                                        <svg id="backward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer-back{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.outer-top-bar{}.outer-bottom-bar{}</style></defs><title>backward</title><g class="backward-group"><path class="outer-top-bar" d="M70.88,21.81l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24Z"/><path class="outer-bottom-bar" d="M75.12,94.38l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24Z"/></g></svg>
+                                </div>     
+                                     <div class="mobile-wrapper" onclick="carousel('add', 'airbnbmobile')">
+                                         <img src="https://d2ffutrenqvap3.cloudfront.net/items/3w1z062j290i301l2o46/Screen%20Recording%202018-04-02%20at%2011.30.28.54%20AM.gif" id="airbnbmobile" class="mobile" alt="mobile-alt">
+                                     </div>
+                                <div onclick="carousel('add', 'airbnbmobile')">
+                                        <svg id="forward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.top-bar{}.bottom-bar{}</style></defs><title>forward</title><g class="arrow-group"><path class="top-bar" d="M43.38,26.05l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24Z"/><path class="bottom-bar" d="M47.62,98.62l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24Z"/></g></svg>
+                                </div>
                         </div>
                     </div>
                     <div>
@@ -214,13 +239,13 @@
                                 </a> -->
                         </div>
                 <div class="pics-container space-around">
-                    <div onclick="subtractcarousel('goalbank')">
+                    <div onclick="carousel('sub', 'goalbank')">
                         <svg id="backward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer-back{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.outer-top-bar{}.outer-bottom-bar{}</style></defs><title>backward</title><g class="backward-group"><path class="outer-top-bar" d="M70.88,21.81l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24Z"/><path class="outer-bottom-bar" d="M75.12,94.38l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24Z"/></g></svg>
                     </div>
-                    <div onclick="addcarousel('goalbank')" class="logo-wrapper">
+                    <div onclick="carousel('add', 'goalbank')" class="logo-wrapper">
                         <img src="./images/goal-bank-1.PNG" class="logo" id="goalbank" alt="">
                     </div>
-                    <div onclick="addcarousel('goalbank')">
+                    <div onclick="carousel('add', 'goalbank')">
                             <div class="arrow-wrapper">                                       
                             <svg id="forward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.top-bar{}.bottom-bar{}</style></defs><title>forward</title><g class="arrow-group"><path class="top-bar" d="M43.38,26.05l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24Z"/><path class="bottom-bar" d="M47.62,98.62l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24Z"/></g></svg>
                         </div>
@@ -248,13 +273,13 @@
                                 </a>
                         </div>
                 <div class="pics-container space-around">
-                    <div onclick="subtractcarousel('travelcheap')">
+                    <div onclick="carousel('sub', 'travelcheap')">
                         <svg id="backward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer-back{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.outer-top-bar{}.outer-bottom-bar{}</style></defs><title>backward</title><g class="backward-group"><path class="outer-top-bar" d="M70.88,21.81l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24Z"/><path class="outer-bottom-bar" d="M75.12,94.38l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24Z"/></g></svg>
                     </div>
-                    <div onclick="addcarousel('travelcheap')" class="logo-wrapper">
+                    <div onclick="carousel('add', 'travelcheap')" class="logo-wrapper">
                         <img src="./images/travel-1.PNG" class="logo" id="travelcheap" alt="">
                     </div>
-                    <div onclick="addcarousel('travelcheap')">
+                    <div onclick="carousel('add', 'travelcheap')">
                             <div class="arrow-wrapper">                                       
                             <svg id="forward-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 167 159"><defs><style>.outer{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:4px;}.top-bar{}.bottom-bar{}</style></defs><title>forward</title><g class="arrow-group"><path class="top-bar" d="M43.38,26.05l36.5,36.5c2.73,2.73,7-1.51,4.24-4.24l-36.5-36.5c-2.73-2.73-7,1.51-4.24,4.24Z"/><path class="bottom-bar" d="M47.62,98.62l36.5-36.5c2.73-2.73-1.51-7-4.24-4.24l-36.5,36.5c-2.73,2.73,1.51,7,4.24,4.24Z"/></g></svg>
                         </div>
@@ -272,7 +297,7 @@
     <div id="contact" class="contact-container">
         <div class="contact-content">
             <div class="white-title flex-center">Contact</div>
-            <div style="font-size:18px;color:#B8B8B8;text-align:center;margin:30px 0;">I'm always interested in building new things.<br /> If you're need of a website or have any ideas, please feel free to send me an email.</div>
+            <div style="font-size:18px;color:#B8B8B8;text-align:center;margin:10px auto; width: 90%">I'm always interested in building new things.<br /> If you're need of a website or have any ideas, please feel free to send me an email.</div>
             <div class="space-around">
                     <div class="icons-small flex-center">
                             <a class="icon-box-small" href="https://www.linkedin.com/in/frankrobenalt/" target="_blank">
