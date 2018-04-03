@@ -45,11 +45,12 @@ for (let i=0; i<icons.length; i++){
     }, 300);
 }
 
-setTimeout(function() {
+window.onload = ()=>{
     document.getElementsByClassName('name-wrapper')[0].classList.add('intro');
     document.getElementById('icons').classList.remove('before');
     document.getElementById('icons').classList.add('intro');
-}, 300);
+}   
+
 
 
 function opacity(icon){

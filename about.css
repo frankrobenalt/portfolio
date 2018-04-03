@@ -80,7 +80,6 @@
     .pics-container {
         display: flex;
         width: initial;
-        margin-left: 2%;
     }
 
     .skew-content {
