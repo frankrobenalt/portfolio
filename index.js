@@ -37,7 +37,6 @@ const bg = document.getElementById('about').getBoundingClientRect();
 
 const iconParent = document.getElementById('icons');
 const icons = iconParent.querySelectorAll('.icon-box');
-console.log(iconParent, icons);
 
 for (let i=0; i<icons.length; i++){
     setTimeout(function() {
@@ -46,14 +45,45 @@ for (let i=0; i<icons.length; i++){
 }
 
 window.onload = ()=>{
-    document.getElementsByClassName('name-wrapper')[0].classList.add('intro');
-    document.getElementById('icons').classList.remove('before');
-    document.getElementById('icons').classList.add('intro');
+    setTimeout(function() {
+        document.getElementById('loading').style.transform = 'translateY(10%)';
+    }, 2000);
+    setTimeout(function() {
+        document.getElementById('loading').style.transform = 'translateY(-110%)';
+    }, 2600);
+    setTimeout(function() {
+        document.getElementsByClassName('name-wrapper')[0].classList.add('intro');
+        document.getElementById('icons').classList.remove('before');
+        document.getElementById('icons').classList.add('intro');
+        clearInterval(dotFunc)
+    }, 2800);
 }   
 
+const dotFunc = setInterval(addDot, 250);
 
 
-function opacity(icon){
+const dots = document.getElementById('loading').querySelectorAll('.loading-text');
+let dotCount = 1;
+function addDot(){
+    if(dotCount === 4){
+        dotCount = 1;
+        return removeDots();
+    }
+    dots[dotCount].style.opacity = '1';
+    dotCount++;
+}
+
+function removeDots(){
+    dots.forEach((cur, idx) => {
+        if (idx === 0){ return }
+        cur.style.opacity = '0';
+    })
+    // if(dotCount === 0){
+    //     dotCount = 1;
+    //     return addDot();
+    // }
+    // dots[dotCount].style.opacity = '0';
+    // dotCount--;
 }
 
 const airbnb = ["https://d2ffutrenqvap3.cloudfront.net/items/0M063z0P2G2c3o3z3A0O/Screen%20recording%202018-02-18%20at%2004.46.14%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/2x0n11183C3G2x2E2w1W/Screen%20recording%202018-02-18%20at%2004.49.40%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/1i0v2v313b2U1u1p1K2n/Screen%20recording%202018-02-18%20at%2004.50.57%20PM.gif", "https://d2ffutrenqvap3.cloudfront.net/items/1i0v2v313b2U1u1p1K2n/Screen%20recording%202018-02-18%20at%2004.50.57%20PM.gif"];
