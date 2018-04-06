@@ -44,7 +44,8 @@ for (let i=0; i<icons.length; i++){
     }, 300);
 }
 
-window.onload = ()=>{
+setTimeout(function() {
+    
     setTimeout(function() {
         document.getElementById('loading').style.transform = 'translateY(10%)';
     }, 1000);
@@ -57,7 +58,8 @@ window.onload = ()=>{
         document.getElementById('icons').classList.add('intro');
         clearInterval(dotFunc)
     }, 1600);
-}   
+   
+}, 4000);
 
 const dotFunc = setInterval(addDot, 250);
 
