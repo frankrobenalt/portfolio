@@ -47,16 +47,16 @@ for (let i=0; i<icons.length; i++){
 window.onload = ()=>{
     setTimeout(function() {
         document.getElementById('loading').style.transform = 'translateY(10%)';
-    }, 2000);
+    }, 1000);
     setTimeout(function() {
         document.getElementById('loading').style.transform = 'translateY(-110%)';
-    }, 2600);
+    }, 1300);
     setTimeout(function() {
         document.getElementsByClassName('name-wrapper')[0].classList.add('intro');
         document.getElementById('icons').classList.remove('before');
         document.getElementById('icons').classList.add('intro');
         clearInterval(dotFunc)
-    }, 2800);
+    }, 1600);
 }   
 
 const dotFunc = setInterval(addDot, 250);
