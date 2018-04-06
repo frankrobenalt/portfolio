@@ -59,7 +59,7 @@ setTimeout(function() {
         clearInterval(dotFunc)
     }, 1600);
    
-}, 6000);
+}, 3000);
 
 const dotFunc = setInterval(addDot, 250);
 
