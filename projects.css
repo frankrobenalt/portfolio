@@ -17,16 +17,17 @@
     box-shadow: 0px 0px 5px black;
     -moz-box-shadow: 0px 0px 5px black;
     -webkit-box-shadow: 0px 0px 5px black;
+    display: flex;
+    width: initial;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 1200ms all;
 }
 
 .description {
     margin: 40px 0;
 }
-/* 
-.pics-container {
-    height: 275px;
-    width: 550px;
-} */
+
 
 .logo {
     height: 500px;

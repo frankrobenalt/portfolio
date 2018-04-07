@@ -318,4 +318,15 @@ a {
     #scrollNav {
         display: none;
     }
+    .name-wrapper {
+        height: 100vh;
+        padding: 10px;
+        margin-top: 20%;
+    }
+    .name {
+        font-size: 3em;
+    }
+    .sub {
+        font-size: 2em;
+    }
 }

@@ -77,10 +77,6 @@
         justify-content: initial;
     }
 
-    .pics-container {
-        display: flex;
-        width: initial;
-    }
 
     .skew-content {
         margin-right: 0%;
