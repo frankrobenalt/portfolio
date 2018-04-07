@@ -179,26 +179,26 @@ function scroll(event){
 }
 
 const gifContainers = body.querySelectorAll('.pics-container')
-let gifContainerTops = [];
-gifContainers.forEach((cur, idx)=>{
-    console.log(cur.getBoundingClientRect())
-    gifContainerTops.push(cur.getBoundingClientRect().top);
+const projectContainers = body.querySelectorAll('.description')
+let projectContainerTops = [];
+projectContainers.forEach((cur, idx)=>{
+    projectContainerTops.push(cur.getBoundingClientRect().top);
 })
+
 const height = window.innerHeight;
-console.log(gifContainerTops);
 
 function scrollActions(event){
-    if (window.scrollY > gifContainerTops[3] - (height/(1.33))){
-                gifContainers[3].style.transform = 'translateY(0px)';
-                gifContainers[3].style.opacity = '1';
-    } else if (window.scrollY > gifContainerTops[2] - (height/(1.33))){
-        gifContainers[2].style.transform = 'translateY(0px)';
-        gifContainers[2].style.opacity = '1';
-    } else if (window.scrollY > gifContainerTops[1] - (height/(1.33))){
-        gifContainers[1].style.transform = 'translateY(0px)';
-        gifContainers[1].style.opacity = '1';
-    } else if (window.scrollY > gifContainerTops[0] - (height/(1.33))){
-        gifContainers[0].style.transform = 'translateY(0px)';
-        gifContainers[0].style.opacity = '1';
+    if (window.scrollY > projectContainerTops[3] - (height/(1.33))){
+                projectContainers[3].style.transform = 'translateY(0px)';
+                projectContainers[3].style.opacity = '1';
+    } else if (window.scrollY > projectContainerTops[2] - (height/(1.33))){
+        projectContainers[2].style.transform = 'translateY(0px)';
+        projectContainers[2].style.opacity = '1';
+    } else if (window.scrollY > projectContainerTops[1] - (height/(1.33))){
+        projectContainers[1].style.transform = 'translateY(0px)';
+        projectContainers[1].style.opacity = '1';
+    } else if (window.scrollY > projectContainerTops[0] - (height/(1.33))){
+        projectContainers[0].style.transform = 'translateY(0px)';
+        projectContainers[0].style.opacity = '1';
     }
 }
