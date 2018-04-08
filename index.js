@@ -188,16 +188,16 @@ projectContainers.forEach((cur, idx)=>{
 const height = window.innerHeight;
 
 function scrollActions(event){
-    if (window.scrollY > projectContainerTops[3] - (height/(1.23))){
+    if (window.scrollY > projectContainerTops[3] - (height/(1.5))){
                 projectContainers[3].style.transform = 'translateY(0px)';
                 projectContainers[3].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[2] - (height/(1.23))){
+    } else if (window.scrollY > projectContainerTops[2] - (height/(1.5))){
         projectContainers[2].style.transform = 'translateY(0px)';
         projectContainers[2].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[1] - (height/(1.23))){
+    } else if (window.scrollY > projectContainerTops[1] - (height/(1.5))){
         projectContainers[1].style.transform = 'translateY(0px)';
         projectContainers[1].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[0] - (height/(1.23))){
+    } else if (window.scrollY > projectContainerTops[0] - (height/(1.5))){
         projectContainers[0].style.transform = 'translateY(0px)';
         projectContainers[0].style.opacity = '1';
     }
