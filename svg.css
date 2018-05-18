@@ -1,0 +1,157 @@
+#mtn {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    /* height: -webkit-fill-available; */
+
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px;
+    height: 750px;
+}
+
+#random, .st2 { 
+    opacity: 0; 
+    transition: opacity 2000ms;
+}
+
+.time-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.choice {
+    padding: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    z-index: 20;
+    background: white;
+}
+
+.choice:nth-of-type(1){
+    border-radius: 10px 0 0 10px;
+}
+
+.choice:nth-of-type(2){
+    border-radius: 0px 10px 10px 0px;
+}
+
+.active {
+    background: #9F9F9F;
+    color: white;
+}
+
+.sky{fill:none;}
+.st1{opacity:0.81;}
+.st2{fill:#FFFFFF; opacity: 0;}
+#snow{fill:#6F6F6F;transition: fill 3000ms}
+.st3{fill:url(#SVGID_1_); transition: fill 3000ms}
+.mountain-shadow{opacity:0.36;fill:url(#SVGID_2_);}
+.st5{filter:url(#Adobe_OpacityMaskFilter);}
+.st6{opacity:0.3;mask:url(#SVGID_3_);}
+.st7{fill:#020202;}
+.st8{opacity:0.33;}
+.st9{opacity:0.36;fill:url(#SVGID_4_);}
+.st10{opacity:0.31;}
+
+#body {
+    transition: background-color 3000ms;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 750px;
+    border-radius: 10px;
+}
+
+#moon{    
+    transition: transform 5000ms;
+    transform: translate(50px,500px);
+}
+
+#water {
+    width: 250%;
+    x: -150px;
+}
+
+#offset {
+    stop-color:#16123E;
+}
+
+#offset-dos {
+    stop-color:#000000;
+}
+
+#offset, #offset-dos {
+    transition: stop-color 3000ms;
+    /* color: #1C1851 */
+}
+
+/* night */
+
+#body.night {
+    background-color: #0b0071;
+}
+
+#body.night #moon {
+    transform: translate(50px, 0px);
+}
+
+#body.night #random {
+    opacity: 1;
+}
+
+#body.night .st2 {
+    opacity: 1;
+}
+
+#body.night #offset {
+    stop-color: #3F33AB;
+}
+
+#body.night #offset-dos {
+    stop-color: #1C1851;
+}
+
+#body.night #snow {
+    fill: #FFF;
+}
+
+/* day */
+
+#body.day {
+    background-color: #5DAEFF;
+}
+
+#body.day .st1 {
+    fill: yellow;
+}
+
+#body.day #random {
+    opacity: 0;
+}
+
+#body.day .st2 {
+    opacity: 0;
+}
+
+#body.day #moon {
+    transform: translate(50px, 0px);
+}
+
+#body.day #offset {
+    stop-color: #6AD1BC;
+}
+
+#body.day #offset-dos {
+    stop-color: #2C5F93;
+}
+
+#body.day #snow {
+    fill: #FDFFC9;
+}

@@ -178,15 +178,13 @@ function scroll(event){
     }
 }
 
-const gifContainers = body.querySelectorAll('.pics-container')
-const projectContainers = body.querySelectorAll('.description')
 let projectContainerTops = [];
-projectContainers.forEach((cur, idx)=>{
-    projectContainerTops.push(cur.getBoundingClientRect().top);
-})
-
+const projectContainers = document.querySelectorAll('.description')
+    projectContainers.forEach((cur, idx)=>{
+        projectContainerTops.push(cur.getBoundingClientRect().top);
+    })
+console.log(projectContainerTops)
 const height = window.innerHeight;
-
 function scrollActions(event){
     if (window.scrollY > projectContainerTops[3] - (height / 1.5)){
                 projectContainers[3].style.transform = 'translate(0px, 0px)';
