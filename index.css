@@ -310,9 +310,7 @@ a {
 }
 
 @media (max-width: 700px){
-    .icons {
-        display: none;
-    }
+
     #scrollNav {
         display: none;
     }
