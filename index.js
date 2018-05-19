@@ -168,13 +168,13 @@ window.addEventListener('scroll', scroll);
 window.addEventListener('scroll', scrollActions);
 
 function scroll(event){
-    if (window.scrollY > bg.top - 200) {
+    if (window.scrollY > bg.top - 100) {
         document.getElementById('scrollNav').style.padding = '0px';
-        document.getElementById('navName').style.opacity = '1';
+        document.getElementById('navName').style.transform = 'translateX(0)';
     } 
-    else if (window.scrollY <= bg.top - 200) {
+    else if (window.scrollY <= bg.top - 100) {
         document.getElementById('scrollNav').style.padding = '10px'; 
-        document.getElementById('navName').style.opacity = '0';
+        document.getElementById('navName').style.transform = 'translateX(-150%)';
     }
 }
 
@@ -183,19 +183,18 @@ const projectContainers = document.querySelectorAll('.description')
     projectContainers.forEach((cur, idx)=>{
         projectContainerTops.push(cur.getBoundingClientRect().top);
     })
-console.log(projectContainerTops)
 const height = window.innerHeight;
 function scrollActions(event){
-    if (window.scrollY > projectContainerTops[3] - (height / 1.5)){
+    if (window.scrollY > projectContainerTops[3] - (height * .35)){
                 projectContainers[3].style.transform = 'translate(0px, 0px)';
                 projectContainers[3].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[2] - (height/1.5)){
+    } else if (window.scrollY > projectContainerTops[2] - (height * .35)){
         projectContainers[2].style.transform = 'translate(0px, 0px)';
         projectContainers[2].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[1] - (height/1.5)){
+    } else if (window.scrollY > projectContainerTops[1] - (height * .35)){
         projectContainers[1].style.transform = 'translate(0px, 0px)';
         projectContainers[1].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[0] - (height / 1.5)){
+    } else if (window.scrollY > projectContainerTops[0] - (height * .35)){
         projectContainers[0].style.transform = 'translate(0px, 0px)';
         projectContainers[0].style.opacity = '1';
     }

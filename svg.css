@@ -16,7 +16,7 @@ svg {
 
 #random, .st2 { 
     opacity: 0; 
-    transition: opacity 2000ms;
+    transition: opacity 1000ms;
 }
 
 .time-toggle {
@@ -32,6 +32,7 @@ svg {
     font-weight: 700;
     z-index: 20;
     background: white;
+    cursor: pointer;
 }
 
 .choice:nth-of-type(1){
@@ -44,14 +45,15 @@ svg {
 
 .active {
     background: #9F9F9F;
+    box-shadow: 0px 0px 5px black inset;
     color: white;
 }
 
 .sky{fill:none;}
 .st1{opacity:0.81;}
 .st2{fill:#FFFFFF; opacity: 0;}
-#snow{fill:#6F6F6F;transition: fill 3000ms}
-.st3{fill:url(#SVGID_1_); transition: fill 3000ms}
+#snow{fill:#6F6F6F;transition: fill 1200ms}
+.st3{fill:url(#SVGID_1_); transition: fill 1200ms}
 .mountain-shadow{opacity:0.36;fill:url(#SVGID_2_);}
 .st5{filter:url(#Adobe_OpacityMaskFilter);}
 .st6{opacity:0.3;mask:url(#SVGID_3_);}
@@ -61,7 +63,7 @@ svg {
 .st10{opacity:0.31;}
 
 #body {
-    transition: background-color 3000ms;
+    transition: background-color 1200ms;
     background-color: black;
     margin: 0;
     padding: 0;
@@ -70,7 +72,7 @@ svg {
 }
 
 #moon{    
-    transition: transform 5000ms;
+    transition: all 1200ms;
     transform: translate(50px,500px);
 }
 
@@ -88,7 +90,7 @@ svg {
 }
 
 #offset, #offset-dos {
-    transition: stop-color 3000ms;
+    transition: stop-color 1200ms;
     /* color: #1C1851 */
 }
 
@@ -128,9 +130,6 @@ svg {
     background-color: #5DAEFF;
 }
 
-#body.day .st1 {
-    fill: yellow;
-}
 
 #body.day #random {
     opacity: 0;

@@ -120,16 +120,24 @@ a {
     padding: 10px;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.69);
-    z-index: 2;
+    background-color: #0b0071;
+    z-index: 30;
     /* border-bottom: 3px solid #ff6a00; */
     width: 100%;
     height: 65px;
 }
 
+.navName {
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    height: 55%;
+    padding: 20px 40px;
+    transform: translateX(-150%);
+}
+
 #navName {
-    transition: 300ms opacity;
-    opacity: 0;
+    transition: 300ms transform;
 }
 
 .shadow {
@@ -205,12 +213,6 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   } */
-
-.navName {
-    font-size: 30px;
-    margin-left: 50px;
-    color: white;
-}
 
 .sub {
     font-size: 2.5em;
