@@ -30,7 +30,7 @@
     }
 
     .pic {
-        width: 90%;
+        width: 70%;
         margin-top: 10px;
     }
     .link {
@@ -77,7 +77,7 @@
     }
     .summary {
         font-size: 1em;
-        text-align: center;
+        hyphens: initial;
         margin-top: 25px;
         width: 80%;
     }

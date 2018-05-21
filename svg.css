@@ -1,7 +1,8 @@
 #mtn {
     position: relative;
-    width: 80%;
-    margin: 0 auto;
+    width: 80vw;
+    margin: 40px auto;
+    max-width: 1175px;
     /* height: -webkit-fill-available; */
 
 }
@@ -153,4 +154,72 @@ svg {
 
 #body.day #snow {
     fill: #FDFFC9;
+}
+
+@media (max-width: 1400px){
+    svg, #body {
+        height: 650px;
+    }
+}
+@media (max-width: 1240px){
+    svg, #body {
+        height: 550px;
+    }
+}
+@media (max-width: 1030px){
+    svg {
+        height: 450px;
+    }
+    #body {
+        height: 550px;
+    }
+    .time-toggle {
+        padding-top: 60px;
+    }
+    .choice {
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 840px){
+    svg {
+        height: 350px;
+    }
+    #body {
+        height: 450px;
+    }
+    .choice {
+        font-size: 1.6em;
+        padding: 15px;
+    }
+    .time-toggle {
+        padding-top: 40px;
+    }
+}
+@media (max-width: 650px){
+    svg {
+        height: 250px;
+    }
+    #body {
+        height: 300px;
+    }
+    .choice {
+        font-size: 1.4em;
+    }
+    .time-toggle {
+        padding-top: 20px;
+    }
+}
+@media (max-width: 470px){
+    svg {
+        height: 200px;
+    }
+    #body {
+        height: 250px;
+    }
+    .choice {
+        font-size: 1em;
+    }
+    #mtn {
+        width: 90vw;
+    }
 }

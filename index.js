@@ -185,16 +185,19 @@ const projectContainers = document.querySelectorAll('.description')
     })
 const height = window.innerHeight;
 function scrollActions(event){
-    if (window.scrollY > projectContainerTops[3] - (height * .35)){
-                projectContainers[3].style.transform = 'translate(0px, 0px)';
-                projectContainers[3].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[2] - (height * .35)){
+    if (window.scrollY > projectContainerTops[4] - (height * .5)){
+        projectContainers[4].style.transform = 'translate(0px, 0px)';
+        projectContainers[4].style.opacity = '1';
+    } else if (window.scrollY > projectContainerTops[3] - (height * .5)){
+        projectContainers[3].style.transform = 'translate(0px, 0px)';
+        projectContainers[3].style.opacity = '1';
+    } else if (window.scrollY > projectContainerTops[2] - (height * .5)){
         projectContainers[2].style.transform = 'translate(0px, 0px)';
         projectContainers[2].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[1] - (height * .35)){
+    } else if (window.scrollY > projectContainerTops[1] - (height * .5)){
         projectContainers[1].style.transform = 'translate(0px, 0px)';
         projectContainers[1].style.opacity = '1';
-    } else if (window.scrollY > projectContainerTops[0] - (height * .35)){
+    } else if (window.scrollY > projectContainerTops[0] - (height * .5)){
         projectContainers[0].style.transform = 'translate(0px, 0px)';
         projectContainers[0].style.opacity = '1';
     }
