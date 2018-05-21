@@ -169,11 +169,11 @@ window.addEventListener('scroll', scrollActions);
 
 function scroll(event){
     if (window.scrollY > bg.top - 100) {
-        document.getElementById('scrollNav').style.padding = '0px';
+        document.getElementById('scrollNav').style.transform = 'translateY(0)';
         document.getElementById('navName').style.transform = 'translateX(0)';
     } 
     else if (window.scrollY <= bg.top - 100) {
-        document.getElementById('scrollNav').style.padding = '10px'; 
+        document.getElementById('scrollNav').style.transform = 'translateY(-150%)';
         document.getElementById('navName').style.transform = 'translateX(-150%)';
     }
 }
