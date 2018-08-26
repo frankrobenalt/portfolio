@@ -44,49 +44,49 @@ for (let i=0; i<icons.length; i++){
     }, 300);
 }
 
-document.documentElement.style.overflow = 'hidden';
-document.body.scroll = "no";
+// document.documentElement.style.overflow = 'hidden';
+// document.body.scroll = "no";
 
 setTimeout(function() {
     
-    setTimeout(function() {
-        document.getElementById('loading').style.transform = 'translateY(10%)';
-    }, 1000);
-    setTimeout(function() {
-        document.getElementById('loading').style.transform = 'translateY(-110%)';
-    }, 1300);
-    setTimeout(function() {
+    // setTimeout(function() {
+    //     document.getElementById('loading').style.transform = 'translateY(10%)';
+    // }, 1000);
+    // setTimeout(function() {
+    //     document.getElementById('loading').style.transform = 'translateY(-110%)';
+    // }, 1300);
+    // setTimeout(function() {
         document.documentElement.style.overflow = 'auto'; 
         document.documentElement.style.overflowX = 'hidden'; 
-        document.body.scroll = "yes";
+        // document.body.scroll = "yes";
         document.getElementsByClassName('name-wrapper')[0].classList.add('intro');
         document.getElementById('icons').classList.remove('before');
         document.getElementById('icons').classList.add('intro');
-        clearInterval(dotFunc)
-    }, 1600);
+        // clearInterval(dotFunc)
+    // }, 1600);
     
-}, 3000);
+}, 500);
 
-const dotFunc = setInterval(addDot, 450);
+// const dotFunc = setInterval(addDot, 450);
 
 
-const dots = document.getElementById('loading').querySelectorAll('.loading-text');
-let dotCount = 1;
-function addDot(){
-    if(dotCount === 4){
-        dotCount = 1;
-        return removeDots();
-    }
-    dots[dotCount].style.opacity = '1';
-    dotCount++;
-}
+// const dots = document.getElementById('loading').querySelectorAll('.loading-text');
+// let dotCount = 1;
+// function addDot(){
+//     if(dotCount === 4){
+//         dotCount = 1;
+//         return removeDots();
+//     }
+//     dots[dotCount].style.opacity = '1';
+//     dotCount++;
+// }
 
-function removeDots(){
-    dots.forEach((cur, idx) => {
-        if (idx === 0){ return }
-        cur.style.opacity = '0';
-    })
-}
+// function removeDots(){
+//     dots.forEach((cur, idx) => {
+//         if (idx === 0){ return }
+//         cur.style.opacity = '0';
+//     })
+// }
 
 const airbnb = ['https://dzwonsemrish7.cloudfront.net/items/191I0Z2T0K3n0l0c3g1H/Screen%20recording%202018-02-18%20at%2004.56.22%20PM.gif', 'https://dzwonsemrish7.cloudfront.net/items/1i0v2v313b2U1u1p1K2n/Screen%20recording%202018-02-18%20at%2004.50.57%20PM.gif', 'https://dzwonsemrish7.cloudfront.net/items/0M063z0P2G2c3o3z3A0O/Screen%20recording%202018-02-18%20at%2004.46.14%20PM.gif'];
 const airbnbmobile = ['https://dzwonsemrish7.cloudfront.net/items/1t223Q3R2y0J2K430v0Z/Screen%20Recording%202018-04-02%20at%2011.31.22.23%20AM.gif', 'https://dzwonsemrish7.cloudfront.net/items/3w1z062j290i301l2o46/Screen%20Recording%202018-04-02%20at%2011.30.28.54%20AM.gif']
