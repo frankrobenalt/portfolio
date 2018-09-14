@@ -48,7 +48,7 @@ a {
 .space-around {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -312,6 +312,10 @@ a {
     margin: 10px;
     font-size: 18px;
     text-align: center;
+}
+
+#yawa {
+    height: 400px;
 }
 
 @media (max-width: 700px){

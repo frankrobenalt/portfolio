@@ -185,7 +185,10 @@ const projectContainers = document.querySelectorAll('.description')
     })
 const height = window.innerHeight;
 function scrollActions(event){
-    if (window.scrollY > projectContainerTops[4] - (height * .5)){
+    if (window.scrollY > projectContainerTops[5] - (height * .5)){
+        projectContainers[5].style.transform = 'translate(0px, 0px)';
+        projectContainers[5].style.opacity = '1';
+    } else if (window.scrollY > projectContainerTops[4] - (height * .5)){
         projectContainers[4].style.transform = 'translate(0px, 0px)';
         projectContainers[4].style.opacity = '1';
     } else if (window.scrollY > projectContainerTops[3] - (height * .5)){
