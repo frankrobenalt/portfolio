@@ -38,11 +38,11 @@ const bg = document.getElementById('about').getBoundingClientRect();
 const iconParent = document.getElementById('icons');
 const icons = iconParent.querySelectorAll('.icon-box');
 
-for (let i=0; i<icons.length; i++){
-    setTimeout(function() {
-        icons[i].classList.add('intro');
-    }, 300);
-}
+// for (let i=0; i<icons.length; i++){
+//     setTimeout(function() {
+//         icons[i].classList.add('icon-intro');
+//     }, 300);
+// }
 
 // document.documentElement.style.overflow = 'hidden';
 // document.body.scroll = "no";
@@ -60,8 +60,6 @@ setTimeout(function() {
         document.documentElement.style.overflowX = 'hidden'; 
         // document.body.scroll = "yes";
         document.getElementsByClassName('name-wrapper')[0].classList.add('intro');
-        document.getElementById('icons').classList.remove('before');
-        document.getElementById('icons').classList.add('intro');
         // clearInterval(dotFunc)
     // }, 1600);
     
