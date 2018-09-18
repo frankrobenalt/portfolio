@@ -143,4 +143,7 @@
     .description {
         margin-top: 20px;
     }
+    #nav {
+        justify-content: center;
+    }
 }
