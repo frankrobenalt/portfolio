@@ -36,7 +36,7 @@
 
     .icon-box-small {
         width: auto;
-        margin: 10px 30px;
+        margin: 10px;
     }
 
     .link {
@@ -66,8 +66,14 @@
     }
 
     .icon-title {
-        font-size: 16px;
+        font-size: 12px;
         margin: 10px 0;
+    }
+    .icon-title-small {
+        font-size: 12px;
+    }
+    .sub {
+        font-size: 24px;
     }
     .about-content {
         transform: none;
@@ -85,7 +91,7 @@
         font-size: 1em;
         hyphens: initial;
         margin-top: 25px;
-        width: 80%;
+        width: 90%;
     }
 
     .logo {

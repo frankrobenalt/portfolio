@@ -1,3 +1,13 @@
+#about-container {
+    position: relative;
+}
+
+#about {
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
 .about-container {
     height: 100%;
     background: rgb(62, 62, 62);
@@ -20,9 +30,10 @@
     text-indent: 50px;
     width: 70%;
     color: #B8B8B8;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 250%;
     text-align: left;
+    margin-left: 20px;
 }
 
 .space-around-about {

@@ -3,37 +3,12 @@ window.onbeforeunload = function () {
 }
 
 const bg = document.getElementById('about').getBoundingClientRect();
-// const bgtwo = document.getElementById('projects').getBoundingClientRect();
-// const bgEnd = document.getElementById('contact').getBoundingClientRect();
-// document.getElementById('bgtwo').style.top = bg.bottom - 300 + 'px';
-// document.getElementById('bgtwo').style.height = bgEnd.bottom - bgtwo.y + 300 + 'px';
 
-// function addBackgrounds() {
-    //     window.scrollTo(0, 0);
-    //     const bg = document.getElementById('about').getBoundingClientRect();
-    //     const bgtwo = document.getElementById('projects').getBoundingClientRect();
-    //     const bgEnd = document.getElementById('contact').getBoundingClientRect();
-    //     document.getElementById('bgone').style.backgroundImage = "url('./images/bg.svg')";
-    //     document.getElementById('bgtwo').style.backgroundImage = "url('./images/feather-bg.svg')";
-    //     document.getElementById('bgtwo').style.top = bg.bottom - 300 + 'px';
-    //     document.getElementById('bgtwo').style.height = bgEnd.bottom - bgtwo.y + 'px';
-    // }
-    
-    
-    // setTimeout(function () {
-        //     const icon = document.getElementById('one');
-        //     icon.style.marginLeft = '0%';
-        // }, 500);
-        
-        // setTimeout(function () {
-            //     let icon = document.getElementById('two');
-            //     icon.style.marginLeft = '0%';
-            // }, 1000);
-            
-            // setTimeout(function () {
-                //     let icon = document.getElementById('three');
-                //     icon.style.marginLeft = '0%';
-                // }, 1500);
+
+const back = document.querySelector('.background-image');
+window.onload = function(){
+    back.style.transform = 'translate(-5px,-5px) scale(1.1)';
+}
                 
 const iconParent = document.getElementById('icons');
 const icons = iconParent.querySelectorAll('.icon-box');
@@ -148,12 +123,12 @@ function setCount(dir, count, array){
 
 function scrollAbout() {
     const about = document.getElementById("about");
-    about.scrollIntoView({ behavior: "smooth", inline: "start" });
+    about.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
 }
 
 function scrollProjects() {
     const projects = document.getElementById("projects");
-    projects.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    projects.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
 }
 
 function scrollContact() {
