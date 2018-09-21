@@ -314,7 +314,7 @@ a {
     text-align: center;
 }
 
-#yawa {
+#yawa, #yawawrapper {
     height: 400px;
 }
 
