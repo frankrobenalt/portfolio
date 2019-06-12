@@ -279,7 +279,7 @@ a::after {
     margin: 40px 0 20px;
     opacity: 0;
     transition: 1200ms all;
-    transform: translate(200px, 80px);
+    transform: translate(0px, 80px);
 }
 
 /* .description:nth-of-type(odd){
@@ -672,11 +672,11 @@ a::after {
     }
     .example-box {
         margin: 5px;
-        width: 170px;
-        height: 170px;
+        width: 300px;
+        height: 300px;
     }
     .example-box img {
-        max-height: 170px;
+        max-height: 300px;
     }
     .portrait-container img {
         height: 300px;
