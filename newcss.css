@@ -662,8 +662,8 @@ a::after {
         justify-content: center;
     }
     #bedandbread, #bnbwrapper, #airbnb, #airwrapper, #goalbank, #travelcheap, #travel-wrapper, #goalbank, #goalwrapper {
-        height: 200px;
-        width: 380px;
+        height: 190px;
+        width: 350px;
     }
     .mobile-wrapper {
         width: 200px;

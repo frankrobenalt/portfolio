@@ -233,9 +233,11 @@ function showMobileNav(){
         document.getElementById('menu-mobile').style.transform = 'translateY(-100%)';
         document.getElementById('arrow').style.transform = 'rotate(0deg)';
         mobileNav = false;
+        document.body.scroll = "yes";
     } else {
         document.getElementById('menu-mobile').style.transform = 'translateY(100px)';
         document.getElementById('arrow').style.transform = 'rotate(180deg)';
         mobileNav = true;
+        document.body.scroll = "no";
     }
 }
