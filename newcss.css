@@ -719,4 +719,10 @@ a::after {
         width: 20px;
         transition: 300ms transform;
     }
+    .icons {
+        width: 100%;
+    }
+    .icon-box-small {
+        margin: 5px;
+    }
 }
