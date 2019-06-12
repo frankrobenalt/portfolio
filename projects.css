@@ -102,13 +102,6 @@
     cursor: pointer;
 }
 
-.project-summary {
-    text-align: center;
-    font-size: 1.2em;
-    width: 90%;
-    margin: 0 auto;
-}
-
 .arrow-wrapper {
     height: 60px;
     width: 60px;
