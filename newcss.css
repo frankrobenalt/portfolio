@@ -105,6 +105,7 @@ a::after {
     align-items: center;
     /* transform: translateX(400px); */
     transition: 100ms transform;
+    margin: 0 auto;
 }
 
 .menu-dropdown, .menu-mobile {
