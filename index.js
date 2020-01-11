@@ -2,26 +2,26 @@ let ican = document.getElementById('ican');
 let portrait = document.getElementById('portrait');
 let portraitContainer = document.getElementsByClassName('portrait-container')[0];
 
-let changePortrait = function(){
-    let newPic, newText;
-    if(ican.innerText === 'normally'){
-        newText = 'can';
-        newPic = './images/me.jpg';
-    } else {
-        newText = 'normally';
-        newPic = './images/me-messager.jpg';
-    }
-    portraitContainer.classList.add('transition');
-    setTimeout(() => {
-        ican.innerHTML = newText;
-        portrait.src = newPic;
-    }, 301);
-    setTimeout(() => {
-        portraitContainer.classList.remove('transition');
-    }, 302);
-}
+// let changePortrait = function(){
+//     let newPic, newText;
+//     if(ican.innerText === 'normally'){
+//         newText = 'can';
+//         newPic = './images/me.jpg';
+//     } else {
+//         newText = 'normally';
+//         newPic = './images/me-messager.jpg';
+//     }
+//     portraitContainer.classList.add('transition');
+//     setTimeout(() => {
+//         ican.innerHTML = newText;
+//         portrait.src = newPic;
+//     }, 301);
+//     setTimeout(() => {
+//         portraitContainer.classList.remove('transition');
+//     }, 302);
+// }
 
-let changePortraitInterval = setInterval(changePortrait, 5000);
+// let changePortraitInterval = setInterval(changePortrait, 5000);
 
 // projects animations and picture carousel
 
