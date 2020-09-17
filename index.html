@@ -20,7 +20,7 @@
         <div class="main-item" onclick="scrollToSection('skills')">Skills</div>
         <div class="main-item" onclick="scrollToSection('mywork')">My Work</div>
         <div class="sub-item" onclick="scrollToSection('webdevelopment')">Web Development</div>
-        <!-- <div class="sub-item" onclick="scrollToSection('graphicdesign')">Graphic Design</div> -->
+        <div class="sub-item" onclick="scrollToSection('graphicdesign')">Graphic Design</div>
         <!-- <div class="sub-item" onclick="scrollToSection('photography')">Photography</div> -->
         <!-- <div class="sub-item" onclick="scrollToSection('socialmedia')">Social Media</div> -->
         <div class="main-item" onclick="scrollToSection('contact')">Contact</div>
@@ -34,7 +34,7 @@
             <div class="mobile-item" onclick="scrollToSection('skills', 'mobile')">Skills</div>
             <div class="mobile-item" onclick="scrollToSection('mywork', 'mobile')">My Work</div>
             <div class="sub-item" onclick="scrollToSection('webdevelopment', 'mobile')">Web Development</div>
-            <!-- <div class="sub-item" onclick="scrollToSection('graphicdesign', 'mobile')">Graphic Design</div> -->
+            <div class="sub-item" onclick="scrollToSection('graphicdesign', 'mobile')">Graphic Design</div>
             <!-- <div class="sub-item" onclick="scrollToSection('photography')">Photography</div> -->
             <!-- <div class="sub-item" onclick="scrollToSection('socialmedia')">Social Media</div> -->
             <div class="mobile-item" onclick="scrollToSection('contact', 'mobile')">Contact</div>
@@ -43,9 +43,8 @@
     <div class="main">
         <div class="section" id="aboutme">
             <div class="title">About Me</div>
-            <div>I am a full-stack web developer with extensive experience in React, Redux, D3, rxjs, Node, PostgreSQL, Python, and more.</div>
+            <div>I am a full-stack web developer with extensive experience in React, Redux, Redux-Observable, rxjs, Node, Sass, GraphQL, PostresQL, MySQL, Docker, Git, AngularJS, D3, Jest, Cypress, and more.</div>
             <div class="portrait-container">
-                <div class="handwritten left-pic">this is me</div>
                 <img id="portrait" src="./images/me.jpg" alt="frank robenalt">
             </div>
             <!-- <div class="sub-title" id="thingsilike">Things I Like</div>
@@ -151,6 +150,29 @@
             <div class="title">My Work</div>
             <div class="title" id="webdevelopment">Web Development</div>
             <div class="project-container">
+                    <div class="description">
+                            <div class="sub-title">Domino's Pizza</div>
+                            <div class="dominos-logo-wrapper">
+                                Helped build a suite of brand-new software applications for all of Domino’s 16,000+ stores
+                                around the world.
+                                <img class="dominos-logo" src="images/dominos.png" />
+                            </div>
+                            
+                            
+                            <div>
+                                <div class="summary">
+                                        The Development stack includes:<br>
+                                        <div>React front-end</div>
+                                        <div>Redux for state management</div>
+                                        <div>Sass modules, CLSX, and CSS for stydivng</div>
+                                        <div>Redux-Observable for asynchronous code</div>
+                                        <div>GraphQL for querying API’s</div>
+                                        <div>.Net backend and microservices</div>
+                                        <div>Jest and Cypress for unit and end-to-end testing</div>
+                                        <div>Docker for containerization </div>  
+                                                                 </div>
+                            </div>
+                        </div>
                     <div class="description">
                         <div class="sub-title">The Salvation Army</div>
                         <div>
@@ -322,7 +344,7 @@
                     
                     
                 </div>
-                <!-- <div class="title" id="graphicdesign">Graphic Design</div>
+                <div class="title" id="graphicdesign">Graphic Design</div>
                 <div class="description">
                     <div class="sub-title">Prints By Frank</div>
                     <div>
@@ -378,8 +400,8 @@
                     <img src='./images/designs/raptors-banner.png' alt="coaster"/>
                     <div>Toronto Raptors NBA Champs Banner</div>
                 </div>
-            </div> -->
-            <!-- <div class="ad-banner-container">
+            </div>
+            <div class="ad-banner-container">
                 <div class="slider-container">
                     <div style="margin-left: 310px;" class="slider-container-img-container">
                         <img src='./images/quinnxcii-flareguns.jpg' alt="coaster"/>
@@ -412,7 +434,7 @@
                     <img src='./images/quinnxcii-flareguns.jpg' alt="coaster"/>
                 </div>
             </div>
-        </div> -->
+        </div>
                 <!-- <div class="title" id="photography">Photography</div> -->
             <!-- <div class="title" id="socialmedia">Social Media</div> -->
         </div>

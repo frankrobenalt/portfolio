@@ -48,6 +48,16 @@ a {
     justify-content: flex-end;
 }
 
+.dominos-logo {
+    background: url("./images/dominos.png");
+    height: 6rem;
+
+}
+
+.summary li {
+    text-decoration: none;
+}
+
 .space-around {
     display: flex;
     align-items: center;
